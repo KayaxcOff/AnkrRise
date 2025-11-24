@@ -19,11 +19,13 @@ set(BOX2D_DIR "C:/software/Cpp/libraries/Box2D/box2d-2.4.1")
 
 add_executable(AnkrRise main.cpp 
     "MindEngine2D/Loop/Main/game.hpp" 
-    "MindEngine2D/Loop/Main/game.cpp" 
+    "MindEngine2D/Loop/Main/game.cpp"
+    "MindEngine2D/Loop/Character/character.hpp"
     "MindEngine2D/Core/Physic/physic.hpp" 
     "MindEngine2D/Core/Physic/physic.cpp"
     "MindEngine2D/Core/Input/input.hpp"
     "MindEngine2D/Core/Input/input.cpp"
+    "MindEngine2D/Core/Entity/entity.hpp"
 )
 
 # Include paths
