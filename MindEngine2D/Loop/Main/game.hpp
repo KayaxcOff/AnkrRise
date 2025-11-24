@@ -1,6 +1,8 @@
 #pragma once
 
+#include <memory>
 #include <SFML/Graphics.hpp>
+#include "../../Core/Physic/physic.hpp"
 
 class AnkrGame {
 public:
@@ -16,4 +18,6 @@ private:
 
 	sf::RenderWindow* window;
 	sf::VideoMode videoMode;
+
+	std::unique_ptr<AnkrPhysic> ankr_physic_;
 };
