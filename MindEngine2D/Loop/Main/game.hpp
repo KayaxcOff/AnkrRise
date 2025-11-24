@@ -3,6 +3,7 @@
 #include <memory>
 #include <SFML/Graphics.hpp>
 #include "../../Core/Physic/physic.hpp"
+#include "../../Core/Input/input.hpp"
 
 class AnkrGame {
 public:
@@ -21,6 +22,7 @@ private:
 	sf::Event event;
 
 	std::unique_ptr<AnkrPhysic> ankr_physic_;
+	std::unique_ptr<AnkrInput> ankr_input_;
 
 	void processEvents();
 	void update(float deltaTime);

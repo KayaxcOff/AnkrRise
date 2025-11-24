@@ -18,6 +18,8 @@ void AnkrGame::init() {
 
 	this->ankr_physic_ = std::make_unique<AnkrPhysic>();
 	this->ankr_physic_->init(100.0f);
+
+	this->ankr_input_ = std::make_unique<AnkrInput>();
 }
 
 void AnkrGame::run() {
