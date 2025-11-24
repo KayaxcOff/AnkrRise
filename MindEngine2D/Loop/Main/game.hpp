@@ -18,6 +18,11 @@ private:
 
 	sf::RenderWindow* window;
 	sf::VideoMode videoMode;
+	sf::Event event;
 
 	std::unique_ptr<AnkrPhysic> ankr_physic_;
+
+	void processEvents();
+	void update(float deltaTime);
+	void render();
 };
