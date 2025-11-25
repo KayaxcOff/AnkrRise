@@ -21,7 +21,8 @@ void AnkrGame::init() {
 
 	this->ankr_input_ = std::make_unique<AnkrInput>();
 
-	this->ankr_music_ = std::make_unique<AnkrMusic>();
+	this->ankr_music_ = std::make_unique<AnkrMusic>("path/to/music");
+	this->ankr_music_->init();
 }
 
 void AnkrGame::run() {

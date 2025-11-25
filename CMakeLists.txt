@@ -27,7 +27,8 @@ add_executable(AnkrRise main.cpp
     "MindEngine2D/Core/Input/input.cpp"
     "MindEngine2D/Core/Entity/entity.hpp"
     "MindEngine2D/Asset/Music/music.hpp"
- "MindEngine2D/Asset/Music/music.cpp")
+    "MindEngine2D/Asset/Music/music.cpp"
+)
 
 # Include paths
 target_include_directories(AnkrRise PRIVATE
