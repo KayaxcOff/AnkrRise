@@ -2,9 +2,8 @@
 
 #include <memory>
 #include <SFML/Graphics.hpp>
-#include "../../Core/Physic/physic.hpp"
-#include "../../Core/Input/input.hpp"
-#include "../../Asset/Music/music.hpp"
+#include "../../Core/fppxh.hpp"
+#include "../../Asset/fppxh.hpp"
 
 class AnkrGame {
 public:
@@ -25,6 +24,7 @@ private:
 	std::unique_ptr<AnkrPhysic> ankr_physic_;
 	std::unique_ptr<AnkrInput> ankr_input_;
 	std::unique_ptr<AnkrMusic> ankr_music_;
+	std::unique_ptr<AnkrImage> ankr_image_;
 
 	void processEvents();
 	void update(float deltaTime);

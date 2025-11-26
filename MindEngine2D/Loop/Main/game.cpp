@@ -23,6 +23,8 @@ void AnkrGame::init() {
 
 	this->ankr_music_ = std::make_unique<AnkrMusic>("path/to/music");
 	this->ankr_music_->init();
+
+	this->ankr_image_ = std::make_unique<AnkrImage>();
 }
 
 void AnkrGame::run() {
