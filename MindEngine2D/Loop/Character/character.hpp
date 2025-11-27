@@ -2,17 +2,18 @@
 
 #include <SFML/Graphics.hpp>
 #include <string>
+#include <Box2D/box2d.h>
 #include "../../Core/fppxh.hpp"
 
-class Champion {
+class Champion : public Entity2D {
 protected:
 	std::string _name;
 	int _health;
 	int _maxHealth;
 	int _attackPower;
 public:
-	Champion(const std::string& name, int maxHealth, int attackPower)
-		: _name(name), _health(maxHealth), _maxHealth(maxHealth), _attackPower(attackPower) {}
+	Champion(const std::string& name, int maxHealth, int attackPower, std::string& _file, b2Body* _body)
+		: Entity2D(_file, _body), _name(name), _health(maxHealth), _maxHealth(maxHealth), _attackPower(attackPower) {}
 	virtual ~Champion() = default;
 	virtual void attack(Champion& target) {
 		target.takeDamage(_attackPower);
