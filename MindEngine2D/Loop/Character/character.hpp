@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <string>
+#include "../../Core/fppxh.hpp"
 
 class Champion {
 protected:

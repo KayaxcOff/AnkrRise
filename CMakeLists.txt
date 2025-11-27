@@ -17,10 +17,12 @@ find_package(SFML 2.5 COMPONENTS system window graphics audio network REQUIRED)
 # --------------------
 set(BOX2D_DIR "C:/software/Cpp/libraries/Box2D/box2d-2.4.1")
 
-add_executable(AnkrRise main.cpp 
+add_executable(AnkrRise main.cpp
+    "MindEngine2D/fppxh.hpp"
     "MindEngine2D/Loop/Main/game.hpp" 
     "MindEngine2D/Loop/Main/game.cpp"
     "MindEngine2D/Loop/Character/character.hpp"
+    "MindEngine2D/Loop/Character/champion/champion.hpp"
     "MindEngine2D/Loop/fppxh.hpp"
     "MindEngine2D/Core/Physic/physic.hpp" 
     "MindEngine2D/Core/Physic/physic.cpp"

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <memory>
-#include "MindEngine2D/Loop/Main/game.hpp"
+#include "MindEngine2D/fppxh.hpp"
 
 int main() {
 	std::unique_ptr<AnkrGame> ankr_game_ = std::make_unique<AnkrGame>();

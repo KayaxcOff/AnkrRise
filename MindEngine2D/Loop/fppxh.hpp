@@ -1,3 +1,4 @@
 #pragma once
 
-#include "Character/character.hpp"
+#include "Main/game.hpp"
+#include "Character/champion/champion.hpp"
