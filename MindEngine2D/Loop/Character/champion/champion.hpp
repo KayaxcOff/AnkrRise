@@ -4,11 +4,23 @@
 
 class Characters : public Champion {
 public:
-	Characters(const std::string& _name, int _hp, int _maxHp, int _attack, std::string& _file, b2Body* _body) 
-		: Champion(_name, _hp, _maxHp, _attack, _file, _body) {}
+	Characters(const std::string& name, int health, int attackPower, std::string& file, b2Body* body)
+		: Champion(name, health, attackPower, file, body) {
+		this->body = body;
+		this->hp = health;
+		this->ap = attackPower;
+		this->name = name;
+	}
 	~Characters() {}
 
-private:
+	void move(float x, float y) {
+		body->SetTransform(b2Vec2(x, y), body->GetAngle());
+	}
 
+private:
+	b2Body* body;
+	int hp;
+	int ap;
+	std::string name;
 };
 
